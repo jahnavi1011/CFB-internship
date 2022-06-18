@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container{
+            border: 20px solid rgb(209, 136, 218);
+            background-color: rgb(206, 108, 175);
+            border-radius: 20px;
+            padding: 40px 20px;
+            margin: 20px auto;
+            width: 666px;
+
+        }
+        a{
+            text-decoration: none;
+            color:black
+        }
+        /* down below is pseudo selector */
+        a:hover{
+            color: rgb(183, 17, 53);
+            background-color: rgb(168, 216, 216);
+        }
+        /* after putting the link that has to be visited after clicking on read more in href...we say that link has been visited */
+        a:visited{
+            background-color: rgb(110, 6, 149);
+            color: rgb(172, 167, 177);
+        }
+        a:active{
+            background-color: darkblue;
+        }
+
+        .btn{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            background-color: rgb(226, 174, 215);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            color: aquamarine;
+            background-color: rgb(128, 96, 134);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+    <h3>This is my heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ex voluptate alias temporibus fuga doloribus, amet impedit. Vel dolore, veniam repellat quia quibusdam autem error reiciendis illum fuga modi laboriosam impedit quis. Exercitationem, laboriosam!</p>
+    <a href="https://facebook.com" class="btn">Read more</a>
+    <button class="btn">Contact us</button>
+</div>
+</body>
+</html>

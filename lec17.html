@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Water+Brush&display=swap" rel="stylesheet">
+    <style>
+        p {
+            /* down here are the different font written side by side in stack and it means if franklin gothic medium is not avaible in my operating system then it will check the next font style i.e. arial narrow...if this is available then it will get applied otherwisemove forward and check another   */
+            font-family: 'Koulen', cursive;
+            font-family: 'Water Brush', cursive;
+            font-size: 23px;/* 1/96th of an inch*/
+
+            line-height: 1.3em;   /* fonts(i would say paragraphs) ke bich ki spacing......em------ matlab parents ke font size ka kitna guna*/
+
+            /* font-weight: bold; */
+
+
+            /* now go to chrome and search for web safe fonts.....a list will appear(prefer cssfontstack.com) ......now to import a font style .....best website is font.google.com*/
+        }
+
+        span{
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h4>CSS Fonts</h4>
+    <p>Lets play with <span>fonts </span> fonts. It is very exciting.</p>
+</body>
+
+</html>
+
+<!-- What are Web Safe Fonts?
+Web safe fonts are fonts that are pre-installed by many operating systems. While not all systems have the same fonts installed, you can use a web safe font stack to choose several fonts that look similar, and are installed on the various systems that you want to support. If you want to use fonts other than ones pre-installed, as of CSS3, you can use Web Fonts. -->

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+</head>
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <!-- action is equals to means go to backend.php and submit this form data to this place -->
+    <form action="Backend.php">
+        
+        <!-- label is used so that if i will click on Name on the web page than the cursor will come to the name text area directly -->
+        <label for="name">Name</label>
+        <div>
+             <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <!-- vaise <br> is not recommended okiee instead we will use CSS to provide vertical space(will use padding and margin etc.) -->
+       <div>
+        Role: <input type="text" name="myRole">
+       </div>
+       <br>
+       <div>
+           Email: <input type="email" name="myEmail">
+       </div>
+       <br>
+       <div>
+           Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility"checked>
+        </div>
+        <br>
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> Other <input type="radio" name="myGender">
+            
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="30" rows="10"></textarea>
+        </div>
+        
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf"selected>Swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+        
+    </form>
+    
+</body>
+</html>

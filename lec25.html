@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: khaki;
+            height: 1000px;
+        }
+
+        /* CSS position: static(default), absolute, relative, fixed, sticky */
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+            /* position: relative; */
+            /* relative: relative to its normal position */
+
+            /* position: absolute; */
+            /* absolute: relative to the position of its first parent */
+            /* top: 34px;
+            left: 34px; */
+
+            /* suppose if i want to scroll and we want one box to be their only and not move then we use sticky */
+
+            position: fixed;
+            /* fixed: positions the element relative to the browser window */
+            right: 10px;
+
+            /* position: sticky;
+            top: 3px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- try div.box#box*4....see the jaaaaduuu -->
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

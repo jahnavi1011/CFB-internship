@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <!-- (1)---down here is an element selector as all the paragraph(para inside the div tag too) will get red coloured......as p is for paragraph in common and no class and ID is given to specify which paragraph to be colored-->
+    <!-- <style>
+        p{
+            color: red;
+        }
+
+    </style> -->
+
+    <!--(2)---Now if i give an ID selector to the markup results will be ID specific  -->
+    <!-- <style>
+        #redElement {
+            color: red;
+        }
+    </style> -->
+    <!-- (3)---- down here is class specific selector called class selector -->
+
+    <!-- rememeber for id we use # ......and for class dot(.)-->
+    <style>
+        p{
+            border: 2px solid red;
+        }
+
+        /* ID selector */
+        #firstPara {
+            color: green;
+        }
+        #Secondpara{
+            color: aqua;
+         }
+        .redElement{
+            color: blanchedalmond;
+        }
+        /* Class selector */
+        .bgBlue{
+            color: blueviolet;
+            background-color: blue;
+        }
+        /* Combined grouping selector */
+        footer, span{
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="firstPara">This is a simple paragraph to represent CSS Selectors</p>
+    <p id="Secondpara" class="redElement bgBlue" >This is a another simple paragraph to represent CSS Selectors</p>
+
+    <div>
+        <p>This is yet another simple paragraph inside div to represent CSS Selectors</p>
+        <span>This is span</span>        
+
+    </div>
+    <footer>This is footer</footer>
+
+    <!-- use ID selector when u what CSS changes in only one element.....else use class selector -->
+</body>
+
+</html>

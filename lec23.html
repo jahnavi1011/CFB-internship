@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar {
+            background-color: rgb(83, 43, 122);
+            border-radius: 13px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            /*used to remove the bullets used for lists*/
+            margin: 13px 13px;
+        }
+
+        .navbar li a {
+            padding: 13px 13px;
+            color: white;
+            text-decoration: none;
+        }
+        .navbar li a:hover {
+            color: rgb(213, 18, 161);
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 10px 20px;
+
+        }
+
+
+        .navbar input {
+            border: 2px solid rgb(195, 157, 210);
+            border-radius: 6px;
+            padding: 3px 17px;
+            /* float: right; */
+        }
+
+
+
+        /* do u know why blueviolet color is not seen on the browser...it is becoz after we float something then it get overflow from the parent   */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

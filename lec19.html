@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, borders and background</title>
+    <style>
+        #firstpara {
+            background-color: aqua;
+            height: 100px;
+            width: 455px;
+            border: 4px solid rgb(47, 75, 4);
+            /* all at once can be written in one single line....just like above */
+            /* border-width: 4px;
+            border-color: rgb(157, 237, 157);
+            border-style: solid;  */
+            border-radius: 14px;
+        }
+        #secondpara {
+                background-color: rgb(108, 88, 165);
+                height: 100px;
+                width: 455px;
+                border-top: 4px solid violet;
+                border-right: 4px solid rgb(59, 5, 59);
+                border-bottom: 4px solid rgb(45, 85, 134);
+                border-left: 4px solid rgb(147, 24, 36);
+                border-top-left-radius: 14px;
+                border-bottom-left-radius: 114px;
+                border-top-right-radius: 14px;
+                border-bottom-right-radius: 114px;
+
+            }
+            #thirdpara{
+                height: 500px;
+                width: 500px;
+                /* background-image: url(/image/Jahnavi.png) ; */
+                background-image: url('https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/4ca98mfpfz6knuyq_1641709154.jpeg') ;
+                border: 2px solid royalblue;
+                background-size: contain;
+                background-repeat: no-repeat;/*repeat-x and repeat-y will make it repeat on x and y axis okay!!*/
+                background-position: center center;
+                /* background-position: 192px 34px; */
+                /* background-position: center right; */
+                /* background-position: center left;  */
+                /* background-position: top right;  */
+
+
+                /* so for background position: its always like: top bottom or center,    left right and center okiee */
+
+
+            }
+    </style>
+</head>
+
+<body>
+    <h3>This is heading</h3>
+    <p id="firstpara"> This is a paragraph</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondpara"> This is a second paragraph</p>
+
+    <h3>This is third heading</h3>
+    <p id="thirdpara"> This is a third paragraph</p>
+
+
+</body>
+
+</html>

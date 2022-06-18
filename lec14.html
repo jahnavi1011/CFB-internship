@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+
+
+    <!-- (2):--- down here internal CSS is used but always remember that inline CSS has more precedence than internal CSS ......So on live server css will be applied of inline not internal......now if i comment out the inline CSS then see what happens-->
+
+    <!-- (6):--- now if we use important infront of any css code than it will get the preference irrespectively -->
+    <style>
+        p {
+            color: beige;
+            background-color: rgb(58, 45, 45)!important;
+        }
+        </style>
+
+<!-- (4)--- down here is external CSS is used...buss internal mai existing file mai hi likh dete hai and external mai internal wala content external CSS file mai likh dete hai -->
+
+<link rel="stylesheet" href="lec14.css">
+
+<!--(5):--- always remember between internal and external jo type of CSS sabse niche likha jayega uski precedence sabse jyada hogi...Inline will always be the queen uski precedence always sabse upar okay!....so here external precedence is more.......but ik baat aur that if take this external css up(use alt+ up arrow)..then go to lec13.css file and press ctrl + S and see the magic precedence will not work and external CSS will be applied  -->
+</head>
+
+<body>
+    <h3>this is CSS Tutorial</h3>
+    <!-- (1):--- down here inline CSS is used for this markup(html code is known as markup okiee) -->
+    <!-- (3)--- <p style="color: red; background-color: yellow;">This tutorial will teach you everything you need to know about HTML, CSS</p> -->
+    <p>This tutorial will teach you everything you need to know about HTML, CSS</p>
+
+
+
+
+</body>
+
+</html>
